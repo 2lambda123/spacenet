@@ -54,7 +54,9 @@ public class DataSourceObjectTable extends JTable {
 						boolean isSelected, boolean hasFocus, int row, int column) {
 	                super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 	                if(value instanceof ResourceType)
-	                	setIcon(((ResourceType)value).getIcon());
+	                	{
+	                	    setIcon(((ResourceType)value).getIcon());
+	                	}
 	                else if(value instanceof EdgeType)
 	                	setIcon(((EdgeType)value).getIcon());
 	                else if(value instanceof NodeType)
