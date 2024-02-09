@@ -175,7 +175,9 @@ public class PropulsiveVehiclePanel extends AbstractElementPanel {
 		rcsPanel.add(new JLabel("Max Fuel: "), c);
 		c.gridy++;
 		if(getElementDialog().getDataSourceDialog()==null)
-		rcsPanel.add(new JLabel("Initial Fuel: "), c);
+		{
+		    rcsPanel.add(new JLabel("Initial Fuel: "), c);
+		}
 		
 		c.gridx = 1;
 		c.gridy = 0;
